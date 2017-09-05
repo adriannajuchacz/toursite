@@ -20,7 +20,7 @@ body{
 }
 .map{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-attachment: fixed;
     overflow: hidden;
 }
@@ -150,7 +150,7 @@ body{
 }
 .two {
     position: relative;
-    top: -700px;
+    top: -200px;
     z-index: 1;
     -webkit-transition: top 1s;
     -moz-transition: top 1s;
@@ -187,12 +187,14 @@ right: 0;
 }
 /*END OF OWL CAROUSEL*/
 /*BOOKNOW*/
-.button2{
+.click-here2{
     margin-top: 100px;
+}
+.button2{
     background: #a34b4b;
 }
 .book-now .two{
-    top: -700px;
+    top: -1800px;
 }
 /*END OF OWL BOOKNOW*/
 .footer{
@@ -235,7 +237,7 @@ label span{
     width: 98%;
 }
 .message-group label textarea{
-    height: 100px;
+    height: 120px;
 }
 .send-button{
     margin-top: 25px;

@@ -37,7 +37,7 @@ $(document).ready(function(){
         else
         {
             clicked1=true;
-            $(".whats-included .two").css({"top": "-350px"});
+            $(".whats-included .two").css({"top": "-200px"});
             $(".whats-included").css({"height": 60});
         }
     });
@@ -49,13 +49,13 @@ $(".button2").on('click', function(){
     {
         clicked2=false;
         $(".book-now .two").css({"top": 0});
-        $(".book-now").css({"height": 700});
+        $(".book-now").css({"height": 1800});
         $("body").animate({"scrollTop": window.scrollY +400}, 1000);
     }
     else
     {
         clicked2=true;
-        $(".book-now .two").css({"top": "-700px"});
+        $(".book-now .two").css({"top": "-1800px"});
         $(".book-now").css({"height": 60});
     }
 });
@@ -71,6 +71,7 @@ for (var i = 0; i < (daysWrapper.children.length); i++) {
 $("li:nth-child(1)").on('click', function(){
     if(unclickedArr[1])
     {
+        $(".map").css({"height": "125vh"});
         $("li:nth-child(2n)").css({"display": "none"});
         for (var i = 0; i < (daysWrapper.children.length); i++) {
             unclickedArr[i] = true;
@@ -92,6 +93,7 @@ $("li:nth-child(3)").on('click', function(){
 
     if(unclickedArr[3])
     {
+        $(".map").css({"height": "125vh"});
         $("li:nth-child(2n)").css({"display": "none"});
         for (var i = 0; i < (daysWrapper.children.length); i++) {
             unclickedArr[i] = true;
@@ -113,6 +115,7 @@ $("li:nth-child(5)").on('click', function(){
 
     if(unclickedArr[5])
     {
+        $(".map").css({"height": "125vh"});
         $("li:nth-child(2n)").css({"display": "none"});
         for (var i = 0; i < (daysWrapper.children.length); i++) {
             unclickedArr[i] = true;
@@ -134,6 +137,7 @@ $("li:nth-child(7)").on('click', function(){
 
     if(unclickedArr[7])
     {
+        $(".map").css({"height": "125vh"});
         $("li:nth-child(2n)").css({"display": "none"});
         for (var i = 0; i < (daysWrapper.children.length); i++) {
             unclickedArr[i] = true;
@@ -155,6 +159,7 @@ $("li:nth-child(9)").on('click', function(){
 
     if(unclickedArr[9])
     {
+        $(".map").css({"height": "125vh"});
         $("li:nth-child(2n)").css({"display": "none"});
         for (var i = 0; i < (daysWrapper.children.length); i++) {
             unclickedArr[i] = true;
@@ -176,6 +181,7 @@ $("li:nth-child(11)").on('click', function(){
 
     if(unclickedArr[11])
     {
+        $(".map").css({"height": "125vh"});
         $("li:nth-child(2n)").css({"display": "none"});
         for (var i = 0; i < (daysWrapper.children.length); i++) {
             unclickedArr[i] = true;
@@ -197,6 +203,7 @@ $("li:nth-child(13)").on('click', function(){
 
     if(unclickedArr[13])
     {
+        $(".map").css({"height": "125vh"});
         $("li:nth-child(2n)").css({"display": "none"});
         for (var i = 0; i < (daysWrapper.children.length); i++) {
             unclickedArr[i] = true;
@@ -218,6 +225,7 @@ $("li:nth-child(15)").on('click', function(){
 
     if(unclickedArr[15])
     {
+        $(".map").css({"height": "125vh"});
         $("li:nth-child(2n)").css({"display": "none"});
         for (var i = 0; i < (daysWrapper.children.length); i++) {
             unclickedArr[i] = true;
@@ -234,7 +242,50 @@ $("li:nth-child(15)").on('click', function(){
         $("li:nth-child(16)").css({"display": "none"});
     }
 });
+//DAY 9
+$("li:nth-child(17)").on('click', function(){
 
+    if(unclickedArr[17])
+    {
+        $(".map").css({"height": "125vh"});
+        $("li:nth-child(2n)").css({"display": "none"});
+        for (var i = 0; i < (daysWrapper.children.length); i++) {
+            unclickedArr[i] = true;
+        }
+        unclickedArr[17]=false;
+        $("li:nth-child(18)").css({"display": "inline"});
+        $('html,body').animate({
+            scrollTop: $(".map").offset().top},
+      'slow');
+    }
+    else
+    {
+        unclickedArr[17]=true;
+        $("li:nth-child(18)").css({"display": "none"});
+    }
+});
+//DAY 8
+$("li:nth-child(19)").on('click', function(){
+
+    if(unclickedArr[19])
+    {
+        $(".map").css({"height": "125vh"});
+        $("li:nth-child(2n)").css({"display": "none"});
+        for (var i = 0; i < (daysWrapper.children.length); i++) {
+            unclickedArr[i] = true;
+        }
+        unclickedArr[19]=false;
+        $("li:nth-child(20)").css({"display": "inline"});
+        $('html,body').animate({
+            scrollTop: $(".map").offset().top},
+      'slow');
+    }
+    else
+    {
+        unclickedArr[19]=true;
+        $("li:nth-child(20)").css({"display": "none"});
+    }
+});
 
 //googlemaps
 var position = [27.1959739, 78.02423269999997];
